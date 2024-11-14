@@ -97,38 +97,46 @@ footer {
   background-color: #222;
 }
 
-/* Resource Pack Page Styles */
-#resource-pack-info {
-  padding: 50px;
-  text-align: center;
-}
+/* Add this CSS to your styles.css file */
 
-#resource-pack-info h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Space between grid items */
+  margin-top: 20px;
 }
 
 .feature {
-  margin: 20px 0;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature h3 {
-  font-size: 1.8em;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
 .download-btn {
-  background-color: #1a73e8;
+  background-color: #3498db;
   color: #fff;
-  padding: 15px 30px;
-  font-size: 1.2em;
   border: none;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .download-btn:hover {
-  background-color: #0d5ab9;
+  background-color: #2980b9;
 }
 
 nav {
