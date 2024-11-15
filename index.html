@@ -6270,7 +6270,34 @@
                                                                                                                 >
                                                                                                                     <div style="white-space: normal; position: relative;" data-node-view-wrapper="">
                                                                                                                         <div style="white-space: pre-wrap;" data-node-view-content="">
-                                                                                                                            <div data-node-view-content-inner="paragraph" style="white-space: inherit;">File Size:</div>
+                                                                                                                            <div data-node-view-content-inner="paragraph" style="white-space: inherit;" id="file-size">File Size:</div>
+
+                                                                                                                            <script>
+                                                                                                                                // Function to fetch and display the file size
+                                                                                                                                function getFileSize(url) {
+                                                                                                                                  fetch(url, {
+                                                                                                                                    method: 'HEAD'
+                                                                                                                                  })
+                                                                                                                                  .then(response => {
+                                                                                                                                    const fileSize = response.headers.get('Content-Length');
+                                                                                                                                    if (fileSize) {
+                                                                                                                                      const sizeInMB = (fileSize / 1024 / 1024).toFixed(2); // Convert bytes to MB
+                                                                                                                                      document.getElementById('file-size').innerText = `File Size: ${sizeInMB} MB`; // Update the div content
+                                                                                                                                    } else {
+                                                                                                                                      document.getElementById('file-size').innerText = 'File Size: Unable to retrieve';
+                                                                                                                                    }
+                                                                                                                                  })
+                                                                                                                                  .catch(error => {
+                                                                                                                                    document.getElementById('file-size').innerText = 'File Size: Error fetching size';
+                                                                                                                                  });
+                                                                                                                                }
+
+                                                                                                                                // Fetch the file size on page load
+                                                                                                                                document.addEventListener('DOMContentLoaded', function () {
+                                                                                                                                  const fileUrl = 'https://github.com/Abhinav2011VS/RP-Maximus/releases/download/v1.0/EpicRealmsSMP-ResourcePack.zip';
+                                                                                                                                  getFileSize(fileUrl);
+                                                                                                                                });
+                                                                                                                            </script>
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>
