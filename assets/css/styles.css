@@ -1,16 +1,14 @@
-/* Global Styles */
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     background-image: url('/assets/background/image.png');
-    background-size: cover;   /* Makes the background image cover the whole screen */
-    background-position: center; /* Centers the background image */
-    background-attachment: fixed; /* Ensures the background stays fixed and doesn't scroll */
-    font-family: Arial, sans-serif; /* Default font */
+    background-size: cover;   
+    background-position: center; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif; 
 }
 
-/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,13 +56,11 @@ body {
     color: #780ccc;
 }
 
-/* Main Content Section */
 .content {
     color: white;
-    padding: 100px 20px 20px; /* Top padding to avoid overlap with navbar */
+    padding: 100px 20px 20px; 
 }
 
-/* Content Section Layout with Two Columns */
 .content-section {
     display: flex;
     justify-content: space-between;
@@ -72,9 +68,8 @@ body {
     gap: 20px;
 }
 
-/* Left Column - Text */
 .left-column {
-    flex: 2; /* Left column is larger */
+    flex: 2; 
     text-align: left;
 }
 
@@ -105,9 +100,8 @@ body {
     background-color: #a00b7a;
 }
 
-/* Right Column - Image */
 .right-column {
-    flex: 1; /* Right column is smaller */
+    flex: 1; 
 }
 
 .content-image {
@@ -116,43 +110,38 @@ body {
     border-radius: 10px;
 }
 
-/* Section 2 - Immerse Yourself */
 .second-section {
-    background-color: #A95B95; /* Section background */
+    background-color: #A95B95; 
     padding: 50px 0;
     text-align: center;
     border-radius: 20px;
 }
 
-/* Rounded Container */
 .rounded-container {
-    background-color: rgba(11, 12, 35, 0.75); /* #0b0c23bf */
+    background-color: rgba(11, 12, 35, 0.75); 
     padding: 30px;
     border-radius: 20px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* Heading for the rounded container */
 .rounded-container h2 {
     color: white;
-    font-family: 'Orbitron', sans-serif;  /* Use Orbitron font for a futuristic look */
-    font-size: 3em; /* Increase font size for prominence */
+    font-family: 'Orbitron', sans-serif;  
+    font-size: 3em; 
     margin-bottom: 30px;
-    text-transform: uppercase;  /* All caps for bold emphasis */
+    text-transform: uppercase;  
     letter-spacing: 2px;
 }
 
-/* Feature Boxes */
 .feature-boxes {
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
 
-/* Individual Feature Box */
 .feature-box {
-    background-color: rgba(62, 63, 86, 0.6); /* #3e3f5699 */
+    background-color: rgba(62, 63, 86, 0.6); 
     padding: 20px;
     border-radius: 15px;
     flex: 1;
@@ -162,7 +151,7 @@ body {
 }
 
 .feature-box h3 {
-    font-family: 'Creepster', sans-serif;  /* Fun and exciting font for feature headings */
+    font-family: 'Creepster', sans-serif;  
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -171,7 +160,6 @@ body {
     font-size: 1em;
 }
 
-/* Footer Styles */
 .footer {
     position: fixed;
     bottom: 0;
@@ -186,7 +174,6 @@ body {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer Text */
 .footer p {
     margin: 0;
     letter-spacing: 1px;
@@ -196,33 +183,30 @@ body {
     animation: floatUpDown 4s ease-in-out infinite, pulseColor 2s ease-in-out infinite;
 }
 
-/* Floating Up and Down Effect for Text */
 @keyframes floatUpDown {
     0% {
-        transform: translateY(0); /* Start at the normal position */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-5px); /* Move up a bit */
+        transform: translateY(-5px); 
     }
     100% {
-        transform: translateY(0); /* Return to normal */
+        transform: translateY(0); 
     }
 }
 
-/* Pulsing Text Color Effect */
 @keyframes pulseColor {
     0% {
-        color: white; /* Start with white */
+        color: white; 
     }
     50% {
-        color: #780ccc; /* Midway, change to purple */
+        color: #780ccc; 
     }
     100% {
-        color: white; /* Return to white */
+        color: white; 
     }
 }
 
-/* Section 3 - Discover the Best Resource Pack */
 .discover-section {
     padding: 50px 20px;
     text-align: center;
@@ -243,7 +227,7 @@ body {
 }
 
 .column {
-    background-color: rgba(255, 255, 255, 0.1); /* Slight background for readability */
+    background-color: rgba(255, 255, 255, 0.1); 
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -254,7 +238,7 @@ body {
 
 .column h3 {
     font-size: 1.5em;
-    font-family: 'Creepster', sans-serif;  /* Fun font for column titles */
+    font-family: 'Creepster', sans-serif;  
     margin-bottom: 15px;
 }
 
@@ -262,7 +246,6 @@ body {
     font-size: 1.2em;
 }
 
-/* Section 4 - Download the Epic Realms Resource Pack */
 .download-section {
     padding: 50px 20px;
     display: flex;
@@ -319,9 +302,8 @@ body {
     color: #ccc;
 }
 
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
-    /* Adjust navbar */
+    
     .navbar {
         padding: 10px 20px;
     }
@@ -338,12 +320,12 @@ body {
         font-size: 16px;
     }
 
-    /* Footer text for smaller screens */
+    
     .footer p {
         font-size: 14px;
     }
 
-    /* Adjusting content layout for small screens */
+    
     .content-section {
         flex-direction: column;
         text-align: center;
@@ -361,7 +343,7 @@ body {
         max-width: 100%;
     }
 
-    /* Adjust feature boxes layout for small screens */
+    
     .feature-boxes {
         flex-direction: column;
         align-items: center;
@@ -373,7 +355,7 @@ body {
         width: 80%;
     }
 
-    /* Adjust column layout for Discover the Best Resource Pack */
+    
     .column-container {
         flex-direction: column;
         align-items: center;
@@ -384,7 +366,7 @@ body {
         width: 80%;
     }
 
-    /* Adjust layout for the Download section */
+    
     .download-section {
         flex-direction: column;
         align-items: center;
@@ -421,47 +403,42 @@ body {
     }
 }
 
-/* Download Now Button (Matching Join Now Colors) */
 .download-btn {
-    background-color: #a95b95; /* Match the "Join Now" background color */
+    background-color: #a95b95; 
     color: white;
     padding: 15px 30px;
-    border: 2px solid #a00b7a; /* 2px outline with the desired color */
+    border: 2px solid #a00b7a; 
     font-size: 18px;
     font-weight: 600;
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 50px; 
     cursor: pointer;
-    transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    text-transform: uppercase; /* Capitalized text */
-    letter-spacing: 1px; /* Slight letter spacing */
+    transition: all 0.4s ease-in-out; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
-/* Hover effect for button */
 .download-btn:hover {
-    background-color: #a00b7a; /* Darker purple for hover */
-    color: white; /* Keep text color white on hover */
-    transform: translateY(-5px); /* Lift the button on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-    border-color: #780ccc; /* Slightly lighter purple on hover for the border */
+    background-color: #a00b7a; 
+    color: white; 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    border-color: #780ccc; 
 }
 
-/* Active (clicked) state */
 .download-btn:active {
-    transform: translateY(0); /* Button returns to normal position on click */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow when clicked */
+    transform: translateY(0); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Focus state (optional, if you want to enhance focus) */
 .download-btn:focus {
-    outline: none; /* Remove the default focus outline */
-    border-color: #a00b7a; /* Keep the border color when focused */
-    box-shadow: 0 0 10px rgba(160, 11, 122, 0.7); /* Add a soft glow around the button */
+    outline: none; 
+    border-color: #a00b7a; 
+    box-shadow: 0 0 10px rgba(160, 11, 122, 0.7); 
 }
 
-/* Enhance Your Gameplay Section */
 .exclusive-features-section {
-    background-color: #3e3f56; /* Darker background to distinguish it */
+    background-color: #3e3f56; 
     padding: 50px 0;
     text-align: center;
     border-radius: 20px;
@@ -483,7 +460,7 @@ body {
 }
 
 .feature-box {
-    background-color: rgba(62, 63, 86, 0.8); /* Slightly darker */
+    background-color: rgba(62, 63, 86, 0.8); 
     padding: 20px;
     border-radius: 15px;
     flex: 1;
@@ -502,9 +479,8 @@ body {
     font-size: 1em;
 }
 
-/* Explore the Community Section */
 .community-section {
-    background-color: #780ccc; /* Purple background */
+    background-color: #780ccc; 
     padding: 50px 0;
     text-align: center;
     border-radius: 20px;
@@ -551,7 +527,6 @@ body {
     font-size: 1em;
 }
 
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .feature-boxes, .community-boxes {
         flex-direction: column;
@@ -568,9 +543,8 @@ body {
     }
 }
 
-/* New Section - Check the Live Player Count */
 .player-count-section {
-    background-color: #34495e; /* Dark background for contrast */
+    background-color: #34495e; 
     padding: 50px 20px;
     text-align: center;
     color: white;
@@ -582,9 +556,8 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Player Count Section Styling */
 .player-count-section {
-    background-color: #34495e; /* Dark background for contrast */
+    background-color: #34495e; 
     padding: 50px 20px;
     text-align: center;
     color: white;
@@ -596,7 +569,6 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Player Count Boxes */
 .player-count-boxes {
     display: flex;
     justify-content: space-around;
@@ -605,7 +577,7 @@ body {
 }
 
 .player-count-box {
-    background-color: rgba(62, 63, 86, 0.8); /* Slightly darker for better contrast */
+    background-color: rgba(62, 63, 86, 0.8); 
     padding: 20px;
     border-radius: 15px;
     flex: 1;
@@ -615,7 +587,7 @@ body {
 }
 
 .player-count-box h3 {
-    font-family: 'Creepster', sans-serif;  /* Fun font for headings */
+    font-family: 'Creepster', sans-serif;  
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -624,20 +596,18 @@ body {
     font-size: 1.2em;
 }
 
-/* Status Colors */
 #server-status.online {
-    color: #2ecc71; /* Green for online */
+    color: #2ecc71; 
 }
 
 #server-status.offline {
-    color: #e74c3c; /* Red for offline */
+    color: #e74c3c; 
 }
 
 #server-status.loading {
-    color: #f39c12; /* Yellow for loading state */
+    color: #f39c12; 
 }
 
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .player-count-section {
         padding: 50px 20px;
@@ -662,7 +632,6 @@ body {
     }
 }
 
-/* Final Section - Join Now (No Background, Direct Section) */
 .join-now-section {
     padding: 50px 20px;
     display: flex;
@@ -670,10 +639,9 @@ body {
     gap: 20px;
     align-items: center;
     color: white;
-    max-width: 100%; /* No container */
+    max-width: 100%; 
 }
 
-/* Final Section - Join Now (No Background, Direct Section) */
 .join-now-section {
     padding: 50px 20px;
     display: flex;
@@ -681,10 +649,9 @@ body {
     gap: 20px;
     align-items: center;
     color: white;
-    max-width: 100%; /* No container */
+    max-width: 100%; 
 }
 
-/* Left Column - Join Now Info */
 .join-now-left {
     flex: 1;
     text-align: left;
@@ -708,19 +675,16 @@ body {
     color: #fff;
 }
 
-/* IP Style (for Server IP and Secondary Server IP) */
 .server-ip, .secondary-server-ip {
-    color: #a95b95; /* Initial color */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    color: #a95b95; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
-/* Hover Effect for IPs */
 .server-ip:hover, .secondary-server-ip:hover {
-    color: #780ccc; /* Change to purple on hover */
-    transform: scale(1.05); /* Slight scale effect for emphasis */
+    color: #780ccc; 
+    transform: scale(1.05); 
 }
 
-/* Right Column - Image */
 .join-now-right {
     flex: 1;
     text-align: center;
@@ -733,7 +697,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .join-now-section {
         flex-direction: column;
