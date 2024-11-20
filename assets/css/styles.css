@@ -1,0 +1,143 @@
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/assets/background/image.png');
+    background-size: cover;   /* Makes the background image cover the whole screen */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* This ensures the background stays fixed and doesn't scroll */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+}
+
+.navbar-left {
+    flex: 0 0 auto;
+}
+
+.navbar-favicon {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+    color: #780ccc;
+}
+
+/* Content Styles */
+.content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(255, 0, 255, 0.7));
+    text-align: center;
+    color: white;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Text */
+.footer p {
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    animation: floatUpDown 4s ease-in-out infinite, pulseColor 2s ease-in-out infinite; /* Only animate text */
+}
+
+/* Floating Up and Down Effect for Text */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0); /* Start at the normal position */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up a bit */
+    }
+    100% {
+        transform: translateY(0); /* Return to normal */
+    }
+}
+
+/* Pulsing Text Color Effect */
+@keyframes pulseColor {
+    0% {
+        color: white; /* Start with white */
+    }
+    50% {
+        color: #780ccc; /* Midway, change to purple */
+    }
+    100% {
+        color: white; /* Return to white */
+    }
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar-right {
+        gap: 15px;
+    }
+
+    .navbar-favicon {
+        width: 30px;
+    }
+
+    .navbar-right a {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+}
