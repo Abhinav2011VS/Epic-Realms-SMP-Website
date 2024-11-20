@@ -1,13 +1,17 @@
-// Get the "Home" link by its ID
+// Get the "Home" link by its ID and add smooth scroll to top
 const homeLink = document.getElementById('home-link');
-
-// Add an event listener for the "click" event
 homeLink.addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior (no URL change)
-    
-    // Scroll the page smoothly to the top
-    window.scrollTo({
-        top: 0, // Scroll to the top
+    document.getElementById('home-section').scrollIntoView({
+        behavior: 'smooth' // Smooth scrolling effect
+    });
+});
+
+// Get the "Download Resource Pack" link by its ID and scroll to download section
+const downloadLink = document.getElementById('download-link');
+downloadLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior (no URL change)
+    document.getElementById('download-section').scrollIntoView({
         behavior: 'smooth' // Smooth scrolling effect
     });
 });

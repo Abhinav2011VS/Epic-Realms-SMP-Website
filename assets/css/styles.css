@@ -420,3 +420,41 @@ body {
         font-size: 16px;
     }
 }
+
+/* Download Now Button (Matching Join Now Colors) */
+.download-btn {
+    background-color: #a95b95; /* Match the "Join Now" background color */
+    color: white;
+    padding: 15px 30px;
+    border: 2px solid #a00b7a; /* 2px outline with the desired color */
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-transform: uppercase; /* Capitalized text */
+    letter-spacing: 1px; /* Slight letter spacing */
+}
+
+/* Hover effect for button */
+.download-btn:hover {
+    background-color: #a00b7a; /* Darker purple for hover */
+    color: white; /* Keep text color white on hover */
+    transform: translateY(-5px); /* Lift the button on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    border-color: #780ccc; /* Slightly lighter purple on hover for the border */
+}
+
+/* Active (clicked) state */
+.download-btn:active {
+    transform: translateY(0); /* Button returns to normal position on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow when clicked */
+}
+
+/* Focus state (optional, if you want to enhance focus) */
+.download-btn:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #a00b7a; /* Keep the border color when focused */
+    box-shadow: 0 0 10px rgba(160, 11, 122, 0.7); /* Add a soft glow around the button */
+}
