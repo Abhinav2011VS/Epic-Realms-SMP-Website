@@ -22,8 +22,8 @@
         <div class="navbar-right">
             <a href="#" id="home-link">Home</a> <!-- Added ID here for targeting -->
             <a href="#" id="download-link">Download Resource Pack</a> <!-- Added ID for download -->
-            <a href="#">Join Now - IP</a>
-            <a href="#">Player Count</a>
+            <a href="#" id="join-now-link">Join Now</a>
+            <a href="#" id="player-count-link">Player Count</a>
         </div>
     </nav>
 
@@ -94,6 +94,85 @@
                 <h3>Download the Epic Realms Resource Pack</h3>
                 <button class="download-btn" id="downloadBtn">Download Now</button>
                 <p class="file-size" id="fileSize">File Size: Loading...</p>
+            </div>
+        </section>
+
+        <!-- Enhance Your Gameplay Section -->
+        <div class="exclusive-features-section">
+            <div class="rounded-container">
+                <h2>Enhance Your Gameplay with Exclusive Features</h2>
+                <div class="feature-boxes">
+                    <!-- Feature Box 1 -->
+                    <div class="feature-box">
+                        <h3>Custom Enchantments</h3>
+                        <p>Discover rare and powerful enchantments to boost your gear.</p>
+                    </div>
+                    <!-- Feature Box 2 -->
+                    <div class="feature-box">
+                        <h3>Unique Items</h3>
+                        <p>Find exclusive items and weapons to enhance your skills.</p>
+                    </div>
+                    <!-- Feature Box 3 -->
+                    <div class="feature-box">
+                        <h3>Exciting Events</h3>
+                        <p>Participate in thrilling events with unique rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Explore the Community Section -->
+        <section class="community-section">
+            <div class="rounded-container">
+                <h2>Explore the Epic Realms SMP Community</h2>
+                <div class="community-boxes">
+                    <!-- Community Box 1: Discord -->
+                    <div class="community-box">
+                        <img src="/assets/logos/discord.png" alt="Discord Logo" class="community-logo">
+                        <h3>Discord Server</h3>
+                        <p>Connect with other players and share your experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+
+        <section class="player-count-section" id="player-count-section">
+            <div class="rounded-container">
+                <h2>Check the Live Player Count</h2>
+                <div class="player-count-boxes">
+                    <!-- Left Box - Players Online -->
+                    <div class="player-count-box">
+                        <h3>Players Online:</h3>
+                        <p id="players-online">Loading...</p> <!-- Initially loading text -->
+                    </div>
+                    <!-- Right Box - Server Status -->
+                    <div class="player-count-box">
+                        <h3>Status:</h3>
+                        <p id="server-status" class="loading">Loading...</p> <!-- Initially loading text -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-now-section" id="join-now-section">
+            <!-- Left Column - Join Now info -->
+            <div class="join-now-left">
+                <h2>Join Now</h2>
+                <div class="server-info">
+                    <p><strong>Server IP:</strong> <span class="server-ip">otherwise-jewelry.joinmc.link</span></p>
+                    <p><strong>Secondary Server IP:</strong> <span class="secondary-server-ip">209.25.143.194:22550</span></p>
+                </div>
+            </div>
+            
+            <!-- Right Column - Image -->
+            <div class="join-now-right">
+                <img src="/assets/images/player-fun.png" alt="Fun Minecraft Players" class="join-now-image" width="60%">
             </div>
         </section>
     </div>
