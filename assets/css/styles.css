@@ -222,8 +222,106 @@ body {
     }
 }
 
+/* Section 3 - Discover the Best Resource Pack */
+.discover-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.discover-section h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 30px;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.column {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.column h3 {
+    font-size: 1.5em;
+    font-family: 'Creepster', sans-serif;  /* Fun font for column titles */
+    margin-bottom: 15px;
+}
+
+.column p {
+    font-size: 1.2em;
+}
+
+/* Section 4 - Download the Epic Realms Resource Pack */
+.download-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.download-column {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.download-column img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.download-column .download-btn {
+    background-color: #a95b95;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.download-column .download-btn:hover {
+    background-color: #a00b7a;
+}
+
+.download-info {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.download-info h3 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.download-info .file-size {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
+    /* Adjust navbar */
     .navbar {
         padding: 10px 20px;
     }
@@ -240,6 +338,7 @@ body {
         font-size: 16px;
     }
 
+    /* Footer text for smaller screens */
     .footer p {
         font-size: 14px;
     }
@@ -272,5 +371,52 @@ body {
         margin-bottom: 20px;
         flex: none;
         width: 80%;
+    }
+
+    /* Adjust column layout for Discover the Best Resource Pack */
+    .column-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    /* Adjust layout for the Download section */
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .download-column {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .download-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .download-column img {
+        width: 80%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .download-info h3 {
+        font-size: 1.8em;
+    }
+
+    .download-info .file-size {
+        font-size: 1.1em;
+    }
+
+    .download-column .download-btn {
+        padding: 12px 25px;
+        font-size: 16px;
     }
 }
