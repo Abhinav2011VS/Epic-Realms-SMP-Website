@@ -1,4 +1,4 @@
-/* Body */
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@ body {
     background-image: url('/assets/background/image.png');
     background-size: cover;   /* Makes the background image cover the whole screen */
     background-position: center; /* Centers the background image */
-    background-attachment: fixed; /* This ensures the background stays fixed and doesn't scroll */
+    background-attachment: fixed; /* Ensures the background stays fixed and doesn't scroll */
     font-family: Arial, sans-serif; /* Default font */
 }
 
@@ -58,14 +58,117 @@ body {
     color: #780ccc;
 }
 
-/* Content Styles */
+/* Main Content Section */
 .content {
     color: white;
+    padding: 100px 20px 20px; /* Top padding to avoid overlap with navbar */
+}
+
+/* Content Section Layout with Two Columns */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Left Column - Text */
+.left-column {
+    flex: 2; /* Left column is larger */
+    text-align: left;
+}
+
+.left-column h1 {
+    font-size: 3.066666666666667em;
+    margin-bottom: 10px;
+    font-family: "Prompt", sans-serif;
+}
+
+.left-column p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.join-now-btn {
+    background-color: #a95b95;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Prompt", sans-serif;
+    border-radius: 10px;
+}
+
+.join-now-btn:hover {
+    background-color: #a00b7a;
+}
+
+/* Right Column - Image */
+.right-column {
+    flex: 1; /* Right column is smaller */
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section 2 - Immerse Yourself */
+.second-section {
+    background-color: #A95B95; /* Section background */
+    padding: 50px 0;
     text-align: center;
+    border-radius: 20px;
+}
+
+/* Rounded Container */
+.rounded-container {
+    background-color: rgba(11, 12, 35, 0.75); /* #0b0c23bf */
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Heading for the rounded container */
+.rounded-container h2 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;  /* Use Orbitron font for a futuristic look */
+    font-size: 3em; /* Increase font size for prominence */
+    margin-bottom: 30px;
+    text-transform: uppercase;  /* All caps for bold emphasis */
+    letter-spacing: 2px;
+}
+
+/* Feature Boxes */
+.feature-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Individual Feature Box */
+.feature-box {
+    background-color: rgba(62, 63, 86, 0.6); /* #3e3f5699 */
     padding: 20px;
-    position: relative;
-    z-index: 1;
-    margin-top: 100px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box h3 {
+    font-family: 'Creepster', sans-serif;  /* Fun and exciting font for feature headings */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1em;
 }
 
 /* Footer Styles */
@@ -90,7 +193,7 @@ body {
     text-transform: uppercase;
     font-size: 10px;
     color: white;
-    animation: floatUpDown 4s ease-in-out infinite, pulseColor 2s ease-in-out infinite; /* Only animate text */
+    animation: floatUpDown 4s ease-in-out infinite, pulseColor 2s ease-in-out infinite;
 }
 
 /* Floating Up and Down Effect for Text */
@@ -119,7 +222,7 @@ body {
     }
 }
 
-/* Responsive Design: For smaller screens */
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .navbar {
         padding: 10px 20px;
@@ -138,6 +241,36 @@ body {
     }
 
     .footer p {
-        font-size: 14px; /* Smaller font size on mobile */
+        font-size: 14px;
+    }
+
+    /* Adjusting content layout for small screens */
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .content-image {
+        max-width: 100%;
+    }
+
+    /* Adjust feature boxes layout for small screens */
+    .feature-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        margin-bottom: 20px;
+        flex: none;
+        width: 80%;
     }
 }
