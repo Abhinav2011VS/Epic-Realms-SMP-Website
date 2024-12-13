@@ -5,10 +5,9 @@ const popupMessage = document.getElementById("popup-message");
 
 // Function to show popup
 function showPopup() {
-    popupMessage.style.display = "block";
-    setTimeout(() => {
-        popupMessage.style.display = "none";
-    }, 1500); // Hide the popup after 1.5 seconds
+    popupMessage.style.animation = "none"; // Reset the animation
+    void popupMessage.offsetWidth; // Trigger reflow
+    popupMessage.style.animation = "flyInOut 1.5s ease forwards"; // Restart the animation
 }
 
 // Function to copy text to clipboard
