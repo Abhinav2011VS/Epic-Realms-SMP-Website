@@ -1,23 +1,22 @@
-// Select DOM elements
 const serverIPElement = document.querySelector(".server-ip");
 const secondaryServerIPElement = document.querySelector(".secondary-server-ip");
 const popupMessage = document.getElementById("popup-message");
 
-// Function to show popup
-function showPopup() {
-    popupMessage.style.animation = "none"; // Reset the animation
-    void popupMessage.offsetWidth; // Trigger reflow
-    popupMessage.style.animation = "flyInOut 1.5s ease forwards"; // Restart the animation
+function triggerPopup() {
+    popupMessage.classList.add("show");
+
+    // Remove the class after the animation has completed
+    setTimeout(() => {
+        popupMessage.classList.remove("show");
+    }, 1500); // Total animation duration
 }
 
-// Function to copy text to clipboard
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        showPopup();
+        triggerPopup();
     });
 }
 
-// Event listeners
 serverIPElement.addEventListener("click", () => {
     copyToClipboard("otherwise-jewelry.joinmc.link");
 });

@@ -719,30 +719,26 @@ body {
     background-color: green;
     color: white;
     padding: 10px 15px;
-    border-radius: 25px;
+    border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     font-size: 14px;
     opacity: 0; /* Initially invisible */
-    animation: flyInOut 1.5s ease forwards; /* Animation applied */
+    animation: transform 0.5s ease, visibility 0.2s ease; /* Animation applied */
+    visibility: hidden;
+}
+
+.popup-message.show {
+    visibility: visible;
+    transform: translateY(-120px);
 }
 
 /* Animation Keyframes */
-@keyframes flyInOut {
+@keyframes fadeOut {
     0% {
-        bottom: -100px; /* Start below view */
-        opacity: 0;
-    }
-    20% {
-        bottom: 20px; /* Fly into view */
-        opacity: 1;
-    }
-    80% {
-        bottom: 20px; /* Hold visible position */
         opacity: 1;
     }
     100% {
-        bottom: -100px; /* Fly out of view */
         opacity: 0;
     }
 }
