@@ -2,11 +2,11 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('/assets/background/image.png');
-    background-size: cover;   
-    background-position: center; 
-    background-attachment: fixed; 
-    font-family: Arial, sans-serif; 
+    background-image: url("/assets/background/image.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -58,7 +58,7 @@ body {
 
 .content {
     color: white;
-    padding: 100px 20px 20px; 
+    padding: 100px 20px 20px;
 }
 
 .content-section {
@@ -69,7 +69,7 @@ body {
 }
 
 .left-column {
-    flex: 2; 
+    flex: 2;
     text-align: left;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .right-column {
-    flex: 1; 
+    flex: 1;
 }
 
 .content-image {
@@ -111,14 +111,14 @@ body {
 }
 
 .second-section {
-    background-color: #A95B95; 
+    background-color: #a95b95;
     padding: 50px 0;
     text-align: center;
     border-radius: 20px;
 }
 
 .rounded-container {
-    background-color: rgba(11, 12, 35, 0.75); 
+    background-color: rgba(11, 12, 35, 0.75);
     padding: 30px;
     border-radius: 20px;
     max-width: 900px;
@@ -127,10 +127,10 @@ body {
 
 .rounded-container h2 {
     color: white;
-    font-family: 'Orbitron', sans-serif;  
-    font-size: 3em; 
+    font-family: "Orbitron", sans-serif;
+    font-size: 3em;
     margin-bottom: 30px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
 .feature-box {
-    background-color: rgba(62, 63, 86, 0.6); 
+    background-color: rgba(62, 63, 86, 0.6);
     padding: 20px;
     border-radius: 15px;
     flex: 1;
@@ -151,7 +151,7 @@ body {
 }
 
 .feature-box h3 {
-    font-family: 'Creepster', sans-serif;  
+    font-family: "Creepster", sans-serif;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -185,25 +185,25 @@ body {
 
 @keyframes floatUpDown {
     0% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-5px); 
+        transform: translateY(-5px);
     }
     100% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
 }
 
 @keyframes pulseColor {
     0% {
-        color: white; 
+        color: white;
     }
     50% {
-        color: #780ccc; 
+        color: #780ccc;
     }
     100% {
-        color: white; 
+        color: white;
     }
 }
 
@@ -215,7 +215,7 @@ body {
 .discover-section h2 {
     font-size: 2.5em;
     color: #ffffff;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     margin-bottom: 30px;
 }
 
@@ -227,7 +227,7 @@ body {
 }
 
 .column {
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -238,7 +238,7 @@ body {
 
 .column h3 {
     font-size: 1.5em;
-    font-family: 'Creepster', sans-serif;  
+    font-family: "Creepster", sans-serif;
     margin-bottom: 15px;
 }
 
@@ -293,7 +293,7 @@ body {
 .download-info h3 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
 }
 
 .download-info .file-size {
@@ -303,7 +303,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    
     .navbar {
         padding: 10px 20px;
     }
@@ -320,12 +319,10 @@ body {
         font-size: 16px;
     }
 
-    
     .footer p {
         font-size: 14px;
     }
 
-    
     .content-section {
         flex-direction: column;
         text-align: center;
@@ -343,7 +340,6 @@ body {
         max-width: 100%;
     }
 
-    
     .feature-boxes {
         flex-direction: column;
         align-items: center;
@@ -355,7 +351,6 @@ body {
         width: 80%;
     }
 
-    
     .column-container {
         flex-direction: column;
         align-items: center;
@@ -366,7 +361,6 @@ body {
         width: 80%;
     }
 
-    
     .download-section {
         flex-direction: column;
         align-items: center;
@@ -404,41 +398,41 @@ body {
 }
 
 .download-btn {
-    background-color: #a95b95; 
+    background-color: #a95b95;
     color: white;
     padding: 15px 30px;
-    border: 2px solid #a00b7a; 
+    border: 2px solid #a00b7a;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 50px; 
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.4s ease-in-out; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .download-btn:hover {
-    background-color: #a00b7a; 
-    color: white; 
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
-    border-color: #780ccc; 
+    background-color: #a00b7a;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: #780ccc;
 }
 
 .download-btn:active {
-    transform: translateY(0); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .download-btn:focus {
-    outline: none; 
-    border-color: #a00b7a; 
-    box-shadow: 0 0 10px rgba(160, 11, 122, 0.7); 
+    outline: none;
+    border-color: #a00b7a;
+    box-shadow: 0 0 10px rgba(160, 11, 122, 0.7);
 }
 
 .exclusive-features-section {
-    background-color: #3e3f56; 
+    background-color: #3e3f56;
     padding: 50px 0;
     text-align: center;
     border-radius: 20px;
@@ -446,7 +440,7 @@ body {
 
 .exclusive-features-section h2 {
     color: white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-size: 3em;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -460,7 +454,7 @@ body {
 }
 
 .feature-box {
-    background-color: rgba(62, 63, 86, 0.8); 
+    background-color: rgba(62, 63, 86, 0.8);
     padding: 20px;
     border-radius: 15px;
     flex: 1;
@@ -470,7 +464,7 @@ body {
 }
 
 .feature-box h3 {
-    font-family: 'Creepster', sans-serif;
+    font-family: "Creepster", sans-serif;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -480,7 +474,7 @@ body {
 }
 
 .community-section {
-    background-color: #780ccc; 
+    background-color: #780ccc;
     padding: 50px 0;
     text-align: center;
     border-radius: 20px;
@@ -488,7 +482,7 @@ body {
 
 .community-section h2 {
     color: white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-size: 3em;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -518,7 +512,7 @@ body {
 }
 
 .community-box h3 {
-    font-family: 'Creepster', sans-serif;
+    font-family: "Creepster", sans-serif;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -528,12 +522,14 @@ body {
 }
 
 @media (max-width: 768px) {
-    .feature-boxes, .community-boxes {
+    .feature-boxes,
+    .community-boxes {
         flex-direction: column;
         align-items: center;
     }
 
-    .feature-box, .community-box {
+    .feature-box,
+    .community-box {
         margin-bottom: 20px;
         width: 80%;
     }
@@ -544,7 +540,7 @@ body {
 }
 
 .player-count-section {
-    background-color: #34495e; 
+    background-color: #34495e;
     padding: 50px 20px;
     text-align: center;
     color: white;
@@ -553,11 +549,11 @@ body {
 .player-count-section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
 }
 
 .player-count-section {
-    background-color: #34495e; 
+    background-color: #34495e;
     padding: 50px 20px;
     text-align: center;
     color: white;
@@ -566,7 +562,7 @@ body {
 .player-count-section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
 }
 
 .player-count-boxes {
@@ -577,7 +573,7 @@ body {
 }
 
 .player-count-box {
-    background-color: rgba(62, 63, 86, 0.8); 
+    background-color: rgba(62, 63, 86, 0.8);
     padding: 20px;
     border-radius: 15px;
     flex: 1;
@@ -587,7 +583,7 @@ body {
 }
 
 .player-count-box h3 {
-    font-family: 'Creepster', sans-serif;  
+    font-family: "Creepster", sans-serif;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -597,15 +593,15 @@ body {
 }
 
 #server-status.online {
-    color: #2ecc71; 
+    color: #2ecc71;
 }
 
 #server-status.offline {
-    color: #e74c3c; 
+    color: #e74c3c;
 }
 
 #server-status.loading {
-    color: #f39c12; 
+    color: #f39c12;
 }
 
 @media (max-width: 768px) {
@@ -639,7 +635,7 @@ body {
     gap: 20px;
     align-items: center;
     color: white;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 .join-now-section {
@@ -649,7 +645,7 @@ body {
     gap: 20px;
     align-items: center;
     color: white;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 .join-now-left {
@@ -660,14 +656,14 @@ body {
 .join-now-left h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     color: #fff;
 }
 
 .server-info p {
     font-size: 1.2em;
     margin-bottom: 10px;
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     color: #ccc;
 }
 
@@ -675,14 +671,16 @@ body {
     color: #fff;
 }
 
-.server-ip, .secondary-server-ip {
-    color: #a95b95; 
-    transition: color 0.3s ease, transform 0.3s ease; 
+.server-ip,
+.secondary-server-ip {
+    color: #a95b95;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.server-ip:hover, .secondary-server-ip:hover {
-    color: #780ccc; 
-    transform: scale(1.05); 
+.server-ip:hover,
+.secondary-server-ip:hover {
+    color: #780ccc;
+    transform: scale(1.05);
 }
 
 .join-now-right {
@@ -726,4 +724,4 @@ body {
     display: none;
     z-index: 1000;
     font-size: 14px;
-  }
+}
