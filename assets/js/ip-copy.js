@@ -2,18 +2,18 @@ const serverIPElement = document.querySelector(".server-ip");
 const secondaryServerIPElement = document.querySelector(".secondary-server-ip");
 const popupMessage = document.getElementById("popup-message");
 
-function triggerPopup() {
+function showPopup() {
     popupMessage.classList.add("show");
 
-    // Remove the class after the animation has completed
+    // Wait for animation duration, then hide the popup
     setTimeout(() => {
         popupMessage.classList.remove("show");
-    }, 1500); // Total animation duration
+    }, 1500);
 }
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        triggerPopup();
+        showPopup();
     });
 }
 

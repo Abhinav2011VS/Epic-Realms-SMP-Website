@@ -719,26 +719,16 @@ body {
     background-color: green;
     color: white;
     padding: 10px 15px;
-    border-radius: 8px;
+    border-radius: 25px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
     font-size: 14px;
-    opacity: 0; /* Initially invisible */
-    animation: transform 0.5s ease, visibility 0.2s ease; /* Animation applied */
-    visibility: hidden;
+
+    transition: bottom 0.5s ease, opacity 0.5s ease; /* Animate changes smoothly */
+    opacity: 0;
 }
 
+/* When active (show the popup) */
 .popup-message.show {
-    visibility: visible;
-    transform: translateY(-120px);
-}
-
-/* Animation Keyframes */
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    bottom: 20px; /* Slide into view */
+    opacity: 1;
 }
