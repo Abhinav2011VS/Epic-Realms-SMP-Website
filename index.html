@@ -135,7 +135,7 @@
                     <div class="rounded-container">
                         <h2>Explore the Epic Realms SMP Community</h2>
                         <div class="community-boxes">
-                            <div class="community-box">
+                            <div class="community-box" onclick="window.open('https://discord.gg/F2qMKBu5ea', '_blank')">
                                 <img src="/assets/logos/discord.png" alt="Discord Logo" class="community-logo" />
                                 <h3>Discord Server</h3>
                                 <p>Connect with other players and share your experiences.</p>
@@ -182,24 +182,22 @@
 
         <div class="popup-message" id="popup-message">Copied to Clipboard</div>
 
-        <!-- 404 Error Content -->
-        <div class="error-container">
+        <div id="error-container" class="error-container">
             <!-- Left Side Content -->
-            <div class="error-left">
-                <h1>404</h1>
-                <p id="random-quote-1">Loading...</p>
-                <p id="random-quote-2">Loading...</p>
-                <p id="random-quote-3">Loading...</p>
-                <p id="random-quote-4">Loading...</p>
-                <button class="return-btn" onclick="window.location.href = '/'">Return Home</button>
+            <div class="error-left" id="error-left">
+              <h1>404</h1>
+              <p id="random-quote-1">Loading...</p>
+              <p id="random-quote-2">Loading...</p>
+              <p id="random-quote-3">Loading...</p>
+              <p id="random-quote-4">Loading...</p>
+              <button class="return-btn" onclick="window.location.href = '/'">Return Home</button>
             </div>
-
+          
             <!-- Right Side Image -->
-            <div class="error-right">
-                <img src="/assets/images/404.png" class="error-image" alt="404" />
+            <div class="error-right" id="error-right">
+              <img src="/assets/images/404.png" class="error-image" alt="404" />
             </div>
-        </div>
-
+          </div>
         <footer class="footer">
             <p>&copy; Copyright 2024 Epic Realms SMP - All Rights Reserved</p>
         </footer>

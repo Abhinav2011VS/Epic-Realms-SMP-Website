@@ -1,11 +1,15 @@
 (function () {
     const currentPath = window.location.pathname;
+    const homepage = document.getElementById("homepage");
+    const errorContainer = document.getElementById("error-container");
 
     if (currentPath === "/") {
-        // If on the homepage, show the main content.
-        document.getElementById("homepage").style.display = "block";
+        // Show homepage and hide the 404 error container
+        homepage.style.display = "block";
+        errorContainer.style.display = "none";
     } else {
-        // For any other path, show the 404 error page.
-        document.getElementById("error-container").style.display = "block";
+        // Otherwise, show the 404 error container and hide the homepage
+        homepage.style.display = "none";
+        errorContainer.style.display = "block";
     }
 })();
