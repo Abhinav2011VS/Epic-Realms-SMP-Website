@@ -1,3 +1,5 @@
+// FINAL
+
 document.addEventListener("DOMContentLoaded", function () {
   const stanzas = [
       ["What have we here? A curious plight,", "A broken path and a missing light.", "It could have been a treasure or mod to find,", "But alas, it's a 404—leave it behind."],
