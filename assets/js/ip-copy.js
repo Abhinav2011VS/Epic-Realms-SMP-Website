@@ -1,3 +1,5 @@
+// FINAL
+
 const serverIPElement = document.querySelector(".server-ip");
 const secondaryServerIPElement = document.querySelector(".secondary-server-ip");
 const popupMessage = document.getElementById("popup-message");
