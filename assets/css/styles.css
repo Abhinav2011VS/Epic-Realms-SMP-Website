@@ -540,6 +540,7 @@ body {
 }
 
 .player-count-section {
+    border-radius: 20px;
     background-color: #34495e;
     padding: 50px 20px;
     text-align: center;
